@@ -9,8 +9,16 @@ body {
 }
 
 header {
-    background-color: #222;
-    color: white;
+    background-color: #e1774f;
+    color: orange;
+        min-height: 66vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-lefy: 10%;
+
     padding: 60px 10%;
 }
 
