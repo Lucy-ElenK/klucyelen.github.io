@@ -7,110 +7,99 @@
 
     <title>Mechanical Engineering Portfolio</title>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- NAVIGATION -->
 
-    <header>
-         <nav class="navbar">
+    <nav class="navbar">
 
-        <button class="menu-button" onclick="toggleMenu()">
-            ☰ Menu
-        </button>
+        <a href="index.html">HOME</a>
 
-        <div class="menu" id="menu">
-            <a href="#about">about me</a>
-            <a href="#projects">projects</a>
-            <a href="#journal">engineering journal</a>
-            <a href="#skills">skills</a>
-            <a href="#progress">progress updates</a>
-        </div>
+        <a href="resume.pdf" target="_blank">
+            RESUME
+        </a>
+
+        <a href="projects.html">
+            PROJECTS
+        </a>
+
+        <a href="#about">
+            ABOUT
+        </a>
+
+        <a href="#contact">
+            CONTACT
+        </a>
 
     </nav>
-        
-        <h1>Mechanical Engineering Portfolio</h1>
-        <p>Mechanical Engineering Student | University of Texas at Dallas</p>
+
+
+    <!-- HERO -->
+
+    <header class="home-hero">
+
+        <h1>
+            LUCY ELEN KRYSTALLI
+        </h1>
+
+        <p>
+            mechanical engineering portfolio
+        </p>
+
     </header>
 
-    <!-- ================= MAIN CONTENT ================= -->
+
+    <!-- RECENT PROJECTS -->
 
     <main>
 
-        <!-- ABOUT ME -->
+        <section class="featured-project">
 
-        <section id="about">
-            <h2>about me</h2>
+            <div class="featured-text">
+
+                <h2>Recent Projects</h2>
+
+                <a href="projects.html">
+                    Projectile Motion Experiment
+                </a>
+
+            </div>
+
+
+            <div class="featured-image">
+
+                <img
+                    src="images/projectile-motion.jpg"
+                    alt="Projectile Motion Experiment">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ABOUT -->
+
+        <section class="content-section" id="about">
+
+            <h2>ABOUT</h2>
 
             <p>
-                I am a Mechanical Engineering student interested in
-                engineering design, experimentation, manufacturing,
-                and problem solving.
+                I am a Mechanical Engineering student at the University
+                of Texas at Dallas interested in engineering design,
+                experimentation, manufacturing, and problem solving.
             </p>
-
-            <a href="resume.pdf" class="button"> View Resume</a>
-        </section>
-
-
-
-        <!-- PROJECTS -->
-
-        <section id="projects">
-
-            <h2>projects</h2>
-
-            <div class="project">
-                <h3>Projectile Motion Experiment</h3>
-                <p>Physics experiment analyzing projectile motion.</p>
-            </div>
-
-            <div class="project">
-                <h3>MATLAB Motion Analysis</h3>
-                <p>Motion analysis and data visualization using MATLAB.</p>
-            </div>
-
-            <div class="project">
-                <h3>CAD Project</h3>
-                <p>Mechanical design and CAD modeling project.</p>
-            </div>
-
-            <div class="project">
-                <h3>Arduino Project</h3>
-                <p>Electronics and mechanical engineering project using Arduino.</p>
-            </div>
-
-            <div class="project">
-                <h3>Personal Engineering Projects</h3>
-                <p>Independent engineering projects and experiments.</p>
-            </div>
-
-        </section>
-
-
-
-        <!-- ENGINEERING JOURNAL -->
-
-        <section id="journal">
-
-            <h2>engineering journal</h2>
-
-            <div class="journal">
-              <h3>Spring 2026</h3>
-              <p>Projects, coursework, experiments, and lessons learns.</p>
-            </div>
-
-            <div class="journal">
-                <h3>Fall 2026</h3>
-                <p>Projects, coursework, experiments, and lessons learned.</p>
-            </div>
-
-            <div class="journal">
-                <h3>Spring 2027</h3>
-                <p>Coming soon.</p>
-            </div>
 
         </section>
 
@@ -118,58 +107,39 @@
 
         <!-- SKILLS -->
 
-        <section id="skills">
+        <section class="content-section">
 
-            <h2>Skills</h2>
+            <h2>SKILLS</h2>
 
-            <ul>
-                <li>SolidWorks</li>
-                <li>MATLAB</li>
-                <li>Excel</li>
-                <li>Python</li>
-                <li>Manufacturing</li>
-                <li>Engineering Analysis</li>
-            </ul>
+            <div class="skills">
 
-        </section>
+                <span>SolidWorks</span>
+                <span>MATLAB</span>
+                <span>Excel</span>
+                <span>Python</span>
+                <span>Manufacturing</span>
+                <span>Engineering Analysis</span>
 
-
-
-        <!-- PROGRESS -->
-
-        <section id="progress">
-
-            <h2>progress updates</h2>
-
-            <h3>What I've Learned</h3>
-
-            <p>
-                Notes about the engineering concepts, software,
-                and practical skills I have developed.
-            </p>
-
-
-            <h3>Things I Struggled With</h3>
-
-            <p>
-                Problems I encountered and how I worked through them.
-            </p>
-
-
-            <h3>Goals for Next Semester</h3>
-
-            <p>
-                Engineering skills and projects I want to work on next.
-            </p>
+            </div>
 
         </section>
 
+
+
+        <!-- CONTACT -->
+
+        <section class="content-section" id="contact">
+
+            <h2>CONTACT</h2>
+
+            <p>
+                Email and LinkedIn information can go here.
+            </p>
+
+        </section>
 
     </main>
 
-
-
-    <!-- ================= FOOTER ================= -->
 
     <footer>
 
@@ -177,22 +147,7 @@
 
     </footer>
 
-<script>
 
-    function toggleMenu() {
-
-        const menu = document.getElementById("menu");
-
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        }
-        else {
-            menu.style.display = "block";
-        }
-
-    }
-
-</script>
 </body>
 
 </html>
