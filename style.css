@@ -195,13 +195,24 @@ body {
 }
 
 
-.skills span {
+.skills a {
     background-color: #f3efec;
     color: #1d1d1d;
 
     padding: 12px 24px;
 
     border-radius: 30px;
+
+    text-decoration: none;
+
+    transition: transform 0.2s,
+                background-color 0.2s;
+}
+
+
+.skills a:hover {
+    transform: translateY(-3px);
+    background-color: white;
 }
 
 
