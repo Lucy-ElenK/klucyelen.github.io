@@ -947,3 +947,206 @@ footer {
     }
 
 }
+
+
+/* ==========================================
+   ARDUINO PROJECT PAGES
+   ========================================== */
+
+/* IMAGE PLACEHOLDERS */
+
+.arduino-image-placeholder,
+.arduino-large-placeholder {
+    background-color: #dedbd7;
+    color: #666;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    padding: 20px;
+}
+
+.arduino-image-placeholder {
+    width: 100%;
+    height: 280px;
+}
+
+.arduino-large-placeholder {
+    width: 100%;
+    min-height: 450px;
+}
+
+
+/* ==========================================
+   PROJECT DETAIL HEADER
+   ========================================== */
+
+.arduino-detail-header {
+    text-align: center;
+
+    padding: 40px 20px 70px;
+}
+
+.arduino-detail-header h1 {
+    font-family: "Anton", sans-serif;
+
+    font-size: clamp(55px, 7vw, 110px);
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    margin: 30px 0 20px;
+}
+
+.arduino-breadcrumb {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.arduino-breadcrumb a {
+    color: #f3efec;
+    text-decoration: none;
+}
+
+.arduino-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.arduino-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+
+    letter-spacing: 2px;
+}
+
+
+/* ==========================================
+   MAIN PROJECT CONTENT
+   ========================================== */
+
+.arduino-detail-container {
+    width: 86%;
+    max-width: 1100px;
+
+    margin: 0 auto 100px;
+}
+
+.arduino-hero-image {
+    margin-bottom: 80px;
+}
+
+
+/* INDIVIDUAL SECTIONS */
+
+.arduino-detail-section {
+    margin-bottom: 70px;
+}
+
+.arduino-detail-section h2 {
+    font-family: "Anton", sans-serif;
+
+    font-size: clamp(30px, 4vw, 45px);
+    font-weight: 400;
+
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #777;
+    padding-bottom: 12px;
+}
+
+.arduino-detail-section p {
+    font-size: 17px;
+    line-height: 1.8;
+
+    max-width: 900px;
+}
+
+
+/* TWO-COLUMN IMAGE GALLERY */
+
+.arduino-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+    margin-top: 35px;
+}
+
+
+/* SOURCE CODE BUTTON */
+
+.arduino-project-button {
+    display: inline-block;
+
+    background-color: #f3efec;
+    color: #1d1d1d;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-top: 20px;
+
+    transition: background-color 0.2s,
+                transform 0.2s;
+}
+
+.arduino-project-button:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
+
+
+/* BACK LINK */
+
+.arduino-back {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.arduino-back a {
+    color: #f3efec;
+    text-decoration: none;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.arduino-back a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   MOBILE LAYOUT
+   ========================================== */
+
+@media (max-width: 750px) {
+
+    .arduino-detail-container {
+        width: 92%;
+    }
+
+    .arduino-image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .arduino-large-placeholder {
+        min-height: 250px;
+    }
+
+    .arduino-detail-header {
+        padding: 30px 15px 45px;
+    }
+}
+
